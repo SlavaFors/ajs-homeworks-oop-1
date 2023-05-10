@@ -1,2 +1,2 @@
-export let name = 'qwerty';
-console.log('app worked')
+export const name = 'qwerty';
+console.log('app worked');
