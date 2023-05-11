@@ -2,9 +2,9 @@
 import Undead from '../Undead';
 
 test('should return normal char', () => {
-  const char = new Undead('Ghoul');
+  const char = new Undead('Kejli');
   const result = {
-    name: 'Ghoul',
+    name: 'Kejli',
     type: 'Undead',
     attack: 25,
     defence: 25,
@@ -17,13 +17,13 @@ test('should return normal char', () => {
 test('testing for invalid name', () => {
   const error = 'Допускаются только имена длиной от 2 символов и не более 10';
   expect(() => {
-    const char = new Undead('ы');
+    const char = new Undead('J');
   }).toThrow(error);
 });
 
 test('testing for invalid type', () => {
   const error = 'Тип класса должен быть строкой';
   expect(() => {
-    const char = new Undead('Гуль', 13);
+    const char = new Undead('Koni', 13);
   }).toThrow(error);
 });

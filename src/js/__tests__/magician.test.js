@@ -2,9 +2,9 @@
 import Magician from '../Magician';
 
 test('should return normal char', () => {
-  const char = new Magician('Merlin');
+  const char = new Magician('Marear');
   const result = {
-    name: 'Merlin',
+    name: 'Marear',
     type: 'Magician',
     attack: 10,
     defence: 40,
@@ -17,13 +17,13 @@ test('should return normal char', () => {
 test('testing for invalid name', () => {
   const error = 'Допускаются только имена длиной от 2 символов и не более 10';
   expect(() => {
-    const char = new Magician('ы');
+    const char = new Magician('J');
   }).toThrow(error);
 });
 
 test('testing for invalid type', () => {
   const error = 'Тип класса должен быть строкой';
   expect(() => {
-    const char = new Magician('Гарри', 13);
+    const char = new Magician('Terri', 13);
   }).toThrow(error);
 });
