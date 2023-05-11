@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Zombie from '../Zombie';
 
 test('should return normal char', () => {

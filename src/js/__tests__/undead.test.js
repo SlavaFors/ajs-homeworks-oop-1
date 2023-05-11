@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Undead from '../Undead';
 
 test('should return normal char', () => {

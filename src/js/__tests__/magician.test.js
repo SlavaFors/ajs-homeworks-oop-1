@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Magician from '../Magician';
 
 test('should return normal char', () => {

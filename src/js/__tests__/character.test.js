@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Character from '../character';
 
 test('should return normal char', () => {
@@ -16,13 +17,13 @@ test('should return normal char', () => {
 test('testing for invalid name', () => {
   const error = 'Допускаются только имена длиной от 2 символов и не более 10';
   expect(() => {
-    const char = new Character('ы', 'Celestial');
+    const char1 = new Character('ы', 'Celestial');
   }).toThrow(error);
 });
 
 test('testing for invalid type', () => {
   const error = 'Тип класса должен быть строкой';
   expect(() => {
-    const char = new Character('Боооог', 13);
+    const char2 = new Character('Боооог', 13);
   }).toThrow(error);
 });

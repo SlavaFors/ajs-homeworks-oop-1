@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Daemon from '../Daemon';
 
 test('should return normal char', () => {
